@@ -1,0 +1,9 @@
+.gallery-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-item {
+  padding: 30px;
+  border-radius: 50px;
+}

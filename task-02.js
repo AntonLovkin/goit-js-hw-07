@@ -12,17 +12,25 @@ const ingredients = [
   'Приправы',
 ];
 
-const itemList = ingredients.forEach(ingredient => {
+const ingredientsEl = document.createElement('ul');
+ingredientsEl.classList.add('ingredients');
+ingredientsEl.textContent = 'Ingredients';
+console.log(ingredientsEl);
 
-    const itemIngredientsRef = document.createElement('li');
+const listEl = document.querySelector('.ingredients');
 
-    itemIngredientsRef.textContent = ingredient;
+const itemEl = ingredients.map(ingredient => {
+  const itemRef = document.createElement('li');
+  itemRef.textContent = ingredient;
     
-    console.log(itemIngredientsRef); 
-    
-    document.body.appendChild(itemIngredientsRef);
-    
-})
+  // console.log(itemRef)
+  return itemRef;
+         
+});
+// console.log(itemEl)
+ingredientsEl.append(...itemEl);
+
+
 
 
 
