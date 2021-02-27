@@ -1,3 +1,4 @@
+/*  Задание №3  */
 .gallery-list {
   display: flex;
   justify-content: space-between;
@@ -6,4 +7,18 @@
 .gallery-item {
   padding: 30px;
   border-radius: 50px;
+}
+
+/*  Задание №6  */
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
 }
