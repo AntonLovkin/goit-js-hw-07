@@ -27,7 +27,7 @@ const images = [
 // флексбоксами или гридами через css - классы.
 
 //--------------------------------------------------------
-const makeItemListMarup = ({url, alt}) => {
+const makeItemListMarkup = ({url, alt}) => {
   return `<li> <img src=${url}, alt=${alt} class=gallery-item></li>`
 
 }
@@ -37,7 +37,7 @@ listEl.width = 20;
 // imageListRef.style.display = 'flex';
 // imageListRef.style.justifyContent = 'space-between';
 const makeItemList = images
-  .map(makeItemListMarup)
+  .map(makeItemListMarkup)
   .join('');
 
 listEl.insertAdjacentHTML('beforeend', makeItemList);
